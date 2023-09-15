@@ -1,7 +1,7 @@
 
 body {
   font-family: "Courier New", Courier, monospace;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #ADC4CE;
   background-image: linear-gradient(
   55deg,
@@ -33,6 +33,13 @@ body {
   background: transparent;
 
 }
+.ketan {
+  position: absolute; /* Position the element absolutely */
+  top: 80%; /* Place it at the top of its containing element */
+  left: 50%; /* Center it horizontally (optional) */
+  transform: translateX(-50%); /* Center it horizontally (optional) */
+  z-index: 999; /* Ensure it's on top of other elements if needed */
+}
 .text {
   font-family: "ADLaM Display", cursive;
   background: transparent;
@@ -44,7 +51,7 @@ body {
   width: 18em;
   margin: 0 auto;
   border-right: 2px solid rgba(0, 0, 0, 0.75);
-  font-size: 400%;
+  font-size: 200%;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
@@ -91,6 +98,7 @@ body,
 .jumbotron {
   background-color: black;
   background-color: #ADC4CE;
+  overflow: hidden;
   background: transparent;
 
   align-items: center;
@@ -123,9 +131,19 @@ div {
 ul,
 li {
   text-align: center;
+  color: black;
   list-style-type: none;
-  background-color: black;
+   background-image: linear-gradient(
+  55deg,
+  hsl(19deg 94% 59%) 0%,
+  hsl(46deg 56% 61%) 28%,
+  hsl(79deg 46% 75%) 45%,
+  hsl(80deg 68% 78%) 55%,
+  hsl(35deg 85% 69%) 73%,
+  hsl(345deg 78% 66%) 100%
+);
 }
+
 
 .card-body,
 p.text {
@@ -164,11 +182,13 @@ div#questionsSection {
   hsl(35deg 85% 69%) 73%,
   hsl(345deg 78% 66%) 100%
 );
-  color: white;
-  font-size: 1.25em;
+  color: rgb(0, 0, 0);
+  font-size: 1.5em;
   cursor: pointer;
   outline: none !important;
   border-color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 ul,
@@ -211,6 +231,15 @@ div#questionsSection::after {
 input#Initials {
   text-align: center;
   background-color: black;
+    background-image: linear-gradient(
+  55deg,
+  hsl(19deg 94% 59%) 0%,
+  hsl(46deg 56% 61%) 28%,
+  hsl(79deg 46% 75%) 45%,
+  hsl(80deg 68% 78%) 55%,
+  hsl(35deg 85% 69%) 73%,
+  hsl(345deg 78% 66%) 100%
+);
   color: white;
   outline: none !important;
 }
@@ -225,6 +254,15 @@ ul#questionsUl {
 #initials {
   text-align: center;
   background-color: white;
+    background-image: linear-gradient(
+  55deg,
+  hsl(19deg 94% 59%) 0%,
+  hsl(46deg 56% 61%) 28%,
+  hsl(79deg 46% 75%) 45%,
+  hsl(80deg 68% 78%) 55%,
+  hsl(35deg 85% 69%) 73%,
+  hsl(345deg 78% 66%) 100%
+);
   width: 60px;
 }
 
@@ -279,6 +317,8 @@ ul#questionsUl {
     font-size: 0.85rem;
     padding: none;
     margin: none;
+    width: fit-content;
+    height: fit-content;
   }
 
   .luck {
